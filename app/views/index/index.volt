@@ -70,7 +70,7 @@
             'width':'50%',
             'opacity':'1',
         }).focus();
-        $('.addCategory').css('background-image','url(/img/ico_addCategory-hover.png)')
+        $('.addCategory').css('background-image','url(/img/icons/ico_addCategory-hover.png)')
     });
 
 </script>
