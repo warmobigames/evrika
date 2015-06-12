@@ -1,6 +1,6 @@
 <?php
 
-namespace Warmobi\Models;
+namespace Eureka\Models;
 
 class Users extends \Phalcon\Mvc\Model
 {

@@ -10,4 +10,13 @@ $loader->registerDirs(
         $config->application->controllersDir,
         $config->application->modelsDir
     )
-)->register();
+);
+
+$loader->registerNamespaces(
+    array(
+        'Eureka\Logic'  => $config->application->libraryDir,
+        'Eureka\Models' => $config->application->modelsDir,
+    )
+);
+
+$loader -> register();

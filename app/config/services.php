@@ -78,3 +78,14 @@ $di->set('session', function () {
 
     return $session;
 });
+
+$di->set('router', function(){
+    require __DIR__ . '/../../app/config/routes.php';
+    return $router;
+});
+
+$di->set('cookies', function() {
+    $cookies = new Phalcon\Http\Response\Cookies();
+    $cookies->useEncryption(false);
+    return $cookies;
+});
